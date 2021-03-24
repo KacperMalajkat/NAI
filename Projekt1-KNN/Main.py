@@ -4,6 +4,7 @@ import FileReaderPro
 import matplotlib.pyplot as plt
 
 
+print("\n============================================================")
 print("Prosze podac czym sa podzielone dane np.: ',' ':' ' '")
 print("0 - dane beda podzielone za pomoca znaku: ';'")
 znak = input("Spliter: ")
