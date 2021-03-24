@@ -18,6 +18,13 @@ else:
 
 k = int(sys.argv[1])
 
+# Test
+# k = 3
+# FileReaderPro.readFile("C:\\iris.csv")
+# FileReaderPro.splitData("C:\\iris.csv")
+# dane_treningowe = FileReaderPro.readFile("Trein.csv")
+# dane_testowe = FileReaderPro.readFile("Test.csv")
+
 
 def exit():
     sys.exit(0)
