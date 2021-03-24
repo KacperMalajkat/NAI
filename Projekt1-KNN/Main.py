@@ -4,9 +4,18 @@ import FileReaderPro
 import matplotlib.pyplot as plt
 
 
+print("Prosze podac czym sa podzielone dane np.: ',' ':' ' '")
+print("0 - dane beda podzielone za pomoca znaku: ';'")
+znak = input("Spliter: ")
+if znak == 0:
+    dane_treningowe = FileReaderPro.readFile(sys.argv[2], znak)
+    dane_testowe = FileReaderPro.readFile(sys.argv[3], znak)
+else:
+    dane_treningowe = FileReaderPro.readFile(sys.argv[2])
+    dane_testowe = FileReaderPro.readFile(sys.argv[3])
+
+
 k = int(sys.argv[1])
-dane_treningowe = FileReaderPro.readFile(sys.argv[2])
-dane_testowe = FileReaderPro.readFile(sys.argv[3])
 
 # Test
 # k = 3
