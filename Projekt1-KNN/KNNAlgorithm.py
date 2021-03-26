@@ -22,8 +22,7 @@ def predict(data, vector, k):
             decisionsdict[v[0]] = 0
         decisionsdict[v[0]] += 1
 
-    decision = sorted(decisionsdict, key=lambda el: el[1], reverse=False)[0]
-
+    decision = sorted(decisionsdict.items(), key=lambda x: x[1])[0][0]
     return decision
 
 

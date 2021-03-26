@@ -64,36 +64,32 @@ def show_graf(dane):
     plt.show()
 
 
-def switchk(x):
-    k = int(x)
+if __name__ == '__main__':
 
+    def menu():
+        print()
+        print("\n==============================\n"
+              "============ MENU ============\n"
+              "==============================\n"
+              "select 1 - FULL RAPORT\n"
+              "select 2 - WLASNY KWIATKEK\n"
+              "select 3 - WYKRES SKUTECZNOSCI\n"
+              "select 4 - ZMIEN K\n"
+              "select 5 - WYJSCIE\n"
+              "==============================\n\n")
 
-def menu():
-    print()
-    print("\n==============================\n"
-          "============ MENU ============\n"
-          "==============================\n"
-          "select 1 - FULL RAPORT\n"
-          "select 2 - WLASNY KWIATKEK\n"
-          "select 3 - WYKRES SKUTECZNOSCI\n"
-          "select 4 - ZMIEN K\n"
-          "select 5 - WYJSCIE\n"
-          "==============================\n\n")
-
-
-while True:
-    menu()
-    option = input("Wybierz opcje: ")
-    if int(option) == 1:
-        fullraport()
-    elif int(option) == 2:
-        add_flower()
-    elif int(option) == 3:
-        wykres()
-    elif int(option) == 4:
-        x = input("Podaj k: ")
-        switchk(x)
-    elif int(option) == 5:
-        exit()
-    else:
-        print("Nie ma takiej opcji :(")
+    while True:
+        menu()
+        option = input("Wybierz opcje: ")
+        if int(option) == 1:
+            fullraport()
+        elif int(option) == 2:
+            add_flower()
+        elif int(option) == 3:
+            wykres()
+        elif int(option) == 4:
+            k = int(input("Podaj k: "))
+        elif int(option) == 5:
+            exit()
+        else:
+            print("Nie ma takiej opcji :(")
