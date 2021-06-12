@@ -58,6 +58,6 @@ def start_app():
         start(app)
 
 
-# test()
+test()
 
-start_app()
+# start_app()

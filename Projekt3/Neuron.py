@@ -23,7 +23,7 @@ class Neuron:
     def licz_wartosci(self, vektor: list):
         return self.active_fun(self.iloczyn_skalarny(self.wagi, vektor))
 
-    def napraw_wagi(self, vektor, wzmocnij: bool = True):
+    def napraw_wagi(self, vektor, wzmocnij: bool = True):  # algorytm delta
         if len(vektor) != len(self.wagi):
             raise ValueError("Różne długości wektorów!")
 
