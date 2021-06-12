@@ -13,8 +13,8 @@ public class Main {
     public static void main(String[] args) throws IOException {
 
         //readDataFromFile("src/data1.txt"); // program dzialajacy na danych z pliku "data.txt"
-        readDataFromFile("src/data2.txt"); // program dzialajacy na danych z pliku "dataV2.txt"
-        //readDataFromConsole(); // program dzialajacy na danych z klawiatury
+        //readDataFromFile("src/data2.txt"); // program dzialajacy na danych z pliku "dataV2.txt"
+        readDataFromConsole(); // program dzialajacy na danych z klawiatury
 
         int maxSum = 0;
         boolean[] arr = new boolean[numberOfItems];
